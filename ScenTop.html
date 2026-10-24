@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScenTop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="ScenTop.css">
+</head>
+<body>
+<div id="splash" role="status" aria-label="Loading ScenTop">
+  <i class="sweep s1"></i><i class="sweep s2"></i><i class="sweep s3"></i>
+  <div class="splash-in">
+    <img src="images/logo.png" alt="ScenTop logo">
+    <div class="word">ScenTop</div>
+    <div class="bar"><i></i></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <header class="top">
+    <div class="bar-row">
+      <a class="brand" href="#home" data-go="home"><img src="images/logo.png" alt="">ScenTop</a>
+      <nav class="main" aria-label="Main">
+        <a href="#home" data-go="home">Home</a>
+        <a href="#about" data-go="about">About us</a>
+        <a href="#faq" data-go="faq">FAQ</a>
+        <a href="#download" data-go="download">Download</a>
+      </nav>
+      <a class="btn sm" href="#download" data-go="download">Get the app</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <div class="page" id="p-home">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">The ScenTop app</p>
+          <h1>Find the scent that sits <em>on top.</em></h1>
+          <p class="lede">See what everyone is wearing right now, then keep exploring in the app. ScenTop is free to download.</p>
+          <div class="cta">
+            <a class="btn" href="#download" data-go="download">Download the app</a>
+            <a class="btn ghost" href="#hot" data-scroll="hot">See what's hot</a>
+          </div>
+        </div>
+        <div class="phone" aria-hidden="true">
+          <i class="blob" style="width:180px;height:180px;background:var(--tint);top:-40px;right:-50px"></i>
+          <i class="blob" style="width:120px;height:120px;background:var(--pink);opacity:.45;bottom:-30px;left:-30px"></i>
+          <img src="images/logo.png" alt="">
+          <b>ScenTop</b>
+          <small>Welcome</small>
+        </div>
+      </div>
+
+      <section id="hot">
+        <div class="car-head">
+          <div>
+            <p class="eyebrow">Hot right now</p>
+            <h2>Trending in the app this week</h2>
+          </div>
+          <div class="car-ctl">
+            <button class="round" id="prev" aria-label="Previous products">&larr;</button>
+            <button class="round" id="next" aria-label="Next products">&rarr;</button>
+          </div>
+        </div>
+        <div class="track" id="track" tabindex="0" aria-label="Hot products carousel"></div>
+        <div class="dots" id="dots" aria-label="Carousel position"></div>
+        <div class="car-foot"><a class="btn" href="#download" data-go="download">See more products in the app</a></div>
+        <p class="fine">Sample products shown for this preview.</p>
+      </section>
+
+      <section>
+        <div class="band">
+          <p class="eyebrow">Get started</p>
+          <h2>From link to app in three taps</h2>
+          <ol class="steps">
+            <li><span class="n">1</span><h3>Open the link</h3><p>Someone sends you a ScenTop link. Open it on your phone and you land on the download page.</p></li>
+            <li><span class="n">2</span><h3>Download</h3><p>Tap the direct download button on your Android phone, or scan the QR code from a computer.</p></li>
+            <li><span class="n">3</span><h3>Browse the full catalog</h3><p>Open the app to see every product, not just the hot picks.</p></li>
+          </ol>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="page" id="p-about">
+      <section>
+        <p class="eyebrow">About us</p>
+        <h2>A better way to discover what you smell like</h2>
+        <div class="prose">
+          <p>ScenTop started as a small mobile app for people who love fragrance and hate guessing. It's not easy to see what a fragrance will smell like until you try it, so we focus on what people actually notice: the top notes, the mood, and what is popular right now.</p>
+          <p>This website has one job. It gets you to the app. Everything else, including your account and the full product catalog, lives there now that's your job!.</p>
+        </div>
+        <div class="about-grid">
+          <div><h3>Top notes first</h3><p>Every product is described by what you smell in the first minute, so you know what to expect.</p></div>
+          <div><h3>See what's trending</h3><p>The hot list refreshes in the app, so you can follow what people are choosing now.</p></div>
+          <div><h3>Built for mobile</h3><p>ScenTop is an Android app made with Ionic and Angular, and designed for one hand purchase.</p></div>
+        </div>
+      </section>
+      <section>
+        <h2>Meet the developers</h2>
+        <p class="lede">The people who built ScenTop.</p>
+        <div class="team">
+          <article class="dev">
+            <img class="avatar" src="images/balungay.jpg" alt="Balungay">
+            <h3>Anthony Miguel Balungay </h3>
+            <p>Developer / Lead Developer</p>
+</article>
+          <article class="dev">
+            <img class="avatar" src="images/cinco.jpg" alt="Cinco">
+            <h3>Samuel James Cinco</h3>
+            <p>Developer / Programmer</p>
+          </article>
+          <article class="dev">
+            <img class="avatar" src="images/demillo.jpg" alt="Demillo">       
+            <h3>Orland Gabriel Demillo</h3>
+            <p>Developer / Designer</p>
+          </article>
+          <article class="dev">
+            <img class="avatar" src="images/lim.jpg" alt="Lim">
+            <h3>Michael Terrence Lim</h3>
+            <p>Developer / Designer & Programmer</p>
+          </article>
+          <article class="dev">
+            <img class="avatar" src="images/narvarte.jpg" alt="Narvarte">
+            <h3>Michael Ray Narvarte</h3>
+            <p>Leader / Team Lead</p>
+          </article>
+        </div>
+      </section>
+      <section>
+        <div class="band cta-band">
+          <h2>Ready to try it?</h2>
+          <p class="lede" style="margin-top:0">Download ScenTop and browse the full catalog.</p>
+          <a class="btn" href="#download" data-go="download">Download the app</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- FAQ -->
+    <div class="page" id="p-faq">
+      <section>
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions people ask before downloading</h2>
+        <div class="faq">
+          <details open><summary>Is ScenTop free?</summary><p>Yes. Downloading and installing the app costs nothing.</p></details>
+          <details><summary>How do I download from a link someone sent me?</summary><p>Open the link on your phone. It takes you to the Download page, where the button for your device is highlighted. Tap it to continue to the store.</p></details>
+          <details><summary>Which devices does it run on?</summary><p>ScenTop is currently available for Android phones only, as a direct download. It is not on the App Store or Google Play. On a computer, scan the QR code on the Download page with your phone.</p></details>
+          <details><summary>Can I buy or sign in on this website?</summary><p>No. This site only helps you get the app. Accounts and everything else are inside the app.</p></details>
+          <details><summary>Where can I see more products?</summary><p>The carousel on the Home page shows a few of the hottest picks. Tap "See more" to download the app and browse the rest.</p></details>
+          <details><summary>The download didn't start. What should I do?</summary><p>Check that your phone is online and tap the download button again. You can also copy the link on the Download page and open it in your phone's browser. If Android blocks the install, allow installs from your browser in Settings.</p></details>
+          <details><summary>How do I contact support?</summary><p>Write to <strong>support@scentop.example</strong>. This is a placeholder address for the preview.</p></details>
+        </div>
+      </section>
+    </div>
+
+    <!-- DOWNLOAD -->
+    <div class="page" id="p-download">
+      <section>
+        <p class="eyebrow">Download</p>
+        <h2>Get ScenTop on your phone</h2>
+        <p class="lede">Free for Android. ScenTop is a direct download and is not listed on any app store.</p>
+        <div class="banner" id="banner" hidden></div>
+        <div class="dl">
+          <div class="dl-card">
+            <div class="store">
+              <a class="btn rec" id="dl-apk" target="_blank" rel="noopener"><span>Direct download (APK)<small>Android 8 or newer</small></span></a>
+            </div>
+            <p class="fine" id="detected" style="text-align:left"></p>
+            <div class="linkrow">
+              <input id="share" type="text" readonly aria-label="Share link" value="">
+              <button class="btn sm" id="copy" type="button">Copy link</button>
+            </div>
+          </div>
+          <div class="qr">
+            <div id="qr"></div>
+            <small>Scan with your phone camera</small>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span>&copy; ScenTop. Just a dummy site and preview for all of its contents.</span>
+    <nav aria-label="Footer">
+      <a href="#home" data-go="home">Home</a><a href="#about" data-go="about">About us</a><a href="#faq" data-go="faq">FAQ</a><a href="#download" data-go="download">Download</a>
+    </nav>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="ScenTop.js"></script>
+</body>
+</html>
