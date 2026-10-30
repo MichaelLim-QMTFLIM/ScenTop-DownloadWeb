@@ -1,6 +1,6 @@
 /* Call for url download in case*/
 var DOWNLOAD = {
-  apk: "scentop.apk"
+  apk: "https://github.com/MichaelLim-QMTFLIM/ScenTop-DownloadWeb/releases/download/v1/ScenTop.apk"
 };
 
 var PRODUCTS = [
@@ -96,7 +96,7 @@ document.getElementById("detected").textContent = /iphone|ipad|ipod/i.test(ua)
   ? "ScenTop is not available on iPhone or iPad yet. Open this page on an Android phone to download."
   : /android/i.test(ua) ? "We detected an Android phone." : "On a computer? Scan the QR code with your Android phone.";
 var base = location.href.split("#")[0].split("?")[0];
-var shareUrl = base + "#download";
+var shareUrl = DOWNLOAD.apk;
 document.getElementById("share").value = shareUrl;
 try {
   new QRCode(document.getElementById("qr"), { text: shareUrl, width: 160, height: 160, colorDark: "#474747", colorLight: "#ffffff" });
